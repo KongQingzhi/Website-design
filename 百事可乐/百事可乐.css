@@ -1,0 +1,231 @@
+/* 超小屏幕(手机) <768*/
+@media screen and (max-width:768px) {
+  html {
+    font-size: 5px;
+  }
+
+  #aside {
+    position: absolute;
+    top: 85rem;
+    left: 100px;
+    transform: translateX(-50%);
+    /* width: 100%; */
+    transform: rotateZ(60deg);
+  }
+}
+
+/* 小屏设备(平板) 768~992*/
+@media screen and (min-width:768px) {
+  html {
+    font-size: 6px;
+  }
+
+  #aside {
+    position: absolute;
+    top: 25rem;
+    right: 5rem;
+    transform: translateX(-50%);
+    /* width: 100%; */
+    /* transform: rotateZ(60deg); */
+  }
+}
+
+/* 中等屏幕(桌面显示器) 992~1200 */
+@media screen and (min-width:992px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+/* 宽屏设备(大桌面显示器) >1300*/
+@media screen and (min-width:1300px) {
+  html {
+    font-size: 10px;
+  }
+
+  #aside {
+    position: absolute;
+    top: 15rem;
+    right: 17rem;
+    width: 30rem;
+    height: 60rem;
+    transform: rotateZ(60deg);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+font-size: 62.5%;
+} */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  min-width: 81rem;
+  width: 98vw;
+  height: 98vh;
+  margin: 1vh 1vw;
+  background-color: rgb(12, 52, 199);
+}
+
+.container .nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 5rem;
+  padding-top: 2rem;
+  /* border: 1px solid #000; */
+}
+
+.container .nav img {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 5rem;
+  border-radius: 5rem;
+}
+
+.container .nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 80rem;
+  height: 5rem;
+  margin-right: 5rem;
+}
+
+.container .nav ul li {
+  height: 5rem;
+}
+
+.container .nav ul li a {
+  font-size: 2rem;
+  line-height: 5rem;
+  color: rgb(255, 255, 255);
+}
+
+
+.container .nav ul li:hover {
+  border-bottom: .5rem solid rgb(26, 155, 215);
+}
+
+.container section {
+  min-width: 80rem;
+  width: 50%;
+  height: 70rem;
+  padding: 5rem 5rem;
+}
+
+.container section div {
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* height: 10rem; */
+  margin-bottom: 2rem;
+}
+
+.container section h2 {
+  /* height: 10rem; */
+  font-size: 10rem;
+  line-height: 10rem;
+  color: #fff;
+}
+
+.container section hgroup {
+  /* display: block; */
+  /* height: 3rem; */
+  margin: 2rem 0;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #999;
+}
+
+.container section h3 {
+  /* height: 15rem; */
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+  padding: 0 2rem;
+  color: #999;
+}
+
+.container section h4 {
+  /* height: 35rem; */
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 400;
+  text-indent: 2em;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container aside {
+  position: absolute;
+  top: 5rem;
+  right: 25rem;
+  width: 30rem;
+  height: 60rem;
+  transform: rotateZ(60deg);
+  background: url(20180320223607uewz6.png) no-repeat;
+  background-size: contain;
+}
+
+.container .right {
+  position: absolute;
+  top: 50rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 5rem;
+  height: 30rem;
+  /* background-color: rgb(236, 54, 54); */
+}
+
+.container .right a {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+}
+
+.container .right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+
+.container footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+}
+
+.container footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150rem;
+}
+
+.container footer ul li {
+  box-shadow: .2rem .2rem .5rem .1rem rgba(0, 0, 0, 0.2);
+}
+
+.container footer img {
+  height: 10rem;
+}

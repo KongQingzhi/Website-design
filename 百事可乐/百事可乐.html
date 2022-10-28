@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>百事可乐</title>
+    <link rel="stylesheet" href="百事可乐.css">
+    <!-- <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css"> -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <nav class="nav">
+            <img src="R-C.png" alt="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Classification</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Update</a> </li>
+            </ul>
+        </nav>
+        <section>
+            <div>
+                <h2>Pepsi</h2>
+                <hgroup>——a new generation of choices</hgroup>
+            </div>
+            <h4>Pepsi and Coca-Cola two brands have a hundred years of competitive history, and PepsiCo team after
+                careful investigation found that young people is the largest consumer groups, young people the most
+                popular thing is cool, and cool expression, is unique, trendy, Connotation, the meaning of creative
+                style. Pepsi caught the young people like cool psychological characteristics, began to launch a series
+                of young people think that the most cool star for the image of the spokesperson of the ad.</h4>
+            <h3>The world's three largest drinks - Coke, tea and coffee. Coke filed, naturally think of is "Pepsi."
+            </h3>
+        </section>
+        <div class="right">
+            <a href="#"><img src="微信.png" alt=""></a>
+            <a href="#"><img src="推特.png" alt=""></a>
+            <a href="#"><img src="脸书.png" alt=""></a>
+        </div>
+        <aside id="aside"></aside>
+        <footer>
+            <ul>
+                <li class="btn"><a href="#"><img src="20180320223607uewz6.png" alt=""></a></li>
+                <li class="btn"><a href="#"><img src="20180320223613qFNuH.png" alt=""></a></li>
+                <li class="btn"><a href="#"><img src="2018032022361230I7A.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        var btns = document.getElementsByClassName('btn');
+        var container = document.getElementById('container');
+        var img = document.getElementById('aside');
+        // btns得到的是伪数组  里面的每一个元素 btns[i]
+        btns[0].onclick = function () {
+            container.style.backgroundColor = 'rgb(12, 52, 199)';
+            img.style.background = 'url(20180320223607uewz6.png) no-repeat';
+            img.style.backgroundSize = 'contain';
+        }
+        btns[1].onclick = function () {
+            container.style.backgroundColor = 'rgb(241, 111, 164)';
+            img.style.background = 'url(20180320223613qFNuH.png) no-repeat';
+            img.style.backgroundSize = 'contain';
+        }
+        btns[2].onclick = function () {
+            container.style.backgroundColor = '#d8373c';
+            img.style.background = 'url(2018032022361230I7A.png) no-repeat';
+            img.style.backgroundSize = 'contain';
+        }
+
+    </script>
+</body>
+
+</html>
